@@ -52,3 +52,24 @@ header ul {
 header li {
   margin-left: 20px;
 }
+
+footer {
+  background: linear-gradient(70deg, rgb(24, 24, 24), rgb(25, 29, 29));
+  padding: 24px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  height: 80px;
+  width: 80px;
+  margin: 50px 50px;
+}
+
+footer img {
+  width: 100%;
+  height: 100%;
+}
