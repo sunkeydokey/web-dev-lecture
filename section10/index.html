@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Oswald:wght@300&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <form action="./" method="GET">
+      <label for="user-name">Your name</label>
+      <input type="text" name="user-name" id="user-name" placeholder="Name" />
+      <label for="user-email">Your email address</label>
+      <input
+        type="email"
+        name="user-email"
+        id="user-email"
+        placeholder="Email"
+      />
+      <label for="user-age">Your age</label>
+      <input
+        type="number"
+        name="user-age"
+        id="user-age"
+        placeholder="Age"
+        step="1"
+      />
+      <label for="user-pw">Password</label>
+      <input
+        type="password"
+        name="user-pw"
+        id="user-pw"
+        placeholder="Password"
+      />
+      <label for="birthday">Your birthday</label>
+      <input type="date" name="birthday" id="birthday" />
+      <hr />
+      <h2>인증 수단</h2>
+      <div class="form-controll-inline">
+        <input type="radio" name="verify-method" id="verify-sms" value="sms" />
+        <label for="verify-sms">SMS</label>
+      </div>
+      <div class="form-controll-inline">
+        <input
+          type="radio"
+          name="verify-method"
+          id="verify-phonecall"
+          value="phone"
+        />
+        <label for="verify-phonecall">전화</label>
+      </div>
+      <div class="form-controll-inline">
+        <input
+          type="radio"
+          name="verify-method"
+          id="verify-email"
+          value="email"
+        />
+        <label for="verify-email">E-mail</label>
+      </div>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
