@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Oswald:wght@300&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="./" method="GET">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="user-name">Your name</label>
+              <input type="text" name="user-name" id="user-name" required />
+            </li>
+            <li>
+              <label for="user-email">Your E-mail address</label>
+              <input type="email" name="user-email" id="user-email" />
+            </li>
+            <li>
+              <label for="user-hp">Your Phone Number</label>
+              <input type="tel" name="user-hp" id="user-hp" required />
+            </li>
+            <li>
+              <label for="message">Your message</label>
+              <textarea id="message" rows="6"></textarea>
+            </li>
+            <li>
+              <label for="asking-path">How did you find us</label>
+              <select name="path" id="asking-path">
+                <option value="web">Web Search</option>
+                <option value="social">Social Media</option>
+                <option value="recommendation">Recommendation</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>How should we reply?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="reply-method"
+                id="reply-call"
+                value="call"
+                required
+              />
+              <label for="verify-sms">Call me</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="reply-method"
+                id="reply-email"
+                value="email"
+                required
+                checked
+              />
+              <label for="verify-email">Send me an E-mail</label>
+            </li>
+
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="reply-method"
+                id="reply-donot"
+                value="donot"
+                required
+              />
+              <label for="donot">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="form-control-inline">
+          <input type="checkbox" name="terms" id="agree-terms" required />
+          <label for="agree-terms">Agree to terms?</label>
+        </section>
+
+        <section id="btn">
+          <button type="reset" class="empty-btn">Clear</button>
+          <button type="submit" class="filled-btn">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
