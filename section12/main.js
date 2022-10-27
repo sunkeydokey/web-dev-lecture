@@ -9,14 +9,6 @@ function updateRemainingCharactors(event) {
   const remainingCharactors = maxAllowedChars - textLength;
 
   remaininCharsElement.textContent = remainingCharactors;
-
-  if (remaininCharsElement <= 10) {
-    productNameInputElement.classList.add('warning');
-    remaininCharsElement.classList.add('warning');
-  } else {
-    productNameInputElement.classList.remove('warning');
-    remaininCharsElement.classList.remove('warning');
-  }
 }
 
 productNameInputElement.addEventListener('input', updateRemainingCharactors);
