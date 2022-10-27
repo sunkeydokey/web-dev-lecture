@@ -23,3 +23,22 @@ let firstPargraph = document.querySelector('p');
 
 // 3. Insert the new element into the parent element content
 firstPargraph.append(newAnchorElement);
+
+// REMOVE ELEMENTS
+// 1. Select the element that should be removed
+
+let firstH1Element = document.querySelector('h1');
+
+// 2. Remove it
+
+firstH1Element.remove();
+
+// MOVE ELEMENTS
+
+firstPargraph.parentElement.append(firstPargraph);
+
+// innerHTML
+
+console.log(firstPargraph.innerHTML);
+
+firstPargraph.innerHTML = 'Hi! This is <strong>important</strong>.';
