@@ -1,1 +1,5 @@
-[{"name":"VIPS","address":"seoul","cuisine":"family restaurant","website":"https://vips.com","description":"steak"},{"name":"TGIF","address":"seoul","cuisine":"family restaurant","website":"https://TGIF.com","description":"friday"},{"name":"qweqwe","address":"weqe","cuisine":"ewqeq","website":"https://ewwe.com","description":"wqe"}]
+[
+  { "name": "VIPS", "address": "seoul", "cuisine": "family restaurant", "website": "https://vips.com", "description": "steak" },
+  { "name": "TGIF", "address": "seoul", "cuisine": "family restaurant", "website": "https://TGIF.com", "description": "friday" },
+  { "name": "qweqwe", "address": "weqe", "cuisine": "ewqeq", "website": "https://ewwe.com", "description": "wqe" }
+]
