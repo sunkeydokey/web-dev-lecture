@@ -12,16 +12,15 @@ router.get('/discussion', async function (req, res) {
   let filter = '';
 
   if (req.query.author) {
-    filter = `WHERE author = "${req.query.author}"`;
-    // 이선기"; DROP TABLE comments; SELECT * FROM comments WHERE author = "김계란
+    filter = `WHERE author = ?`;
   }
+  // 이선기"; DROP TABLE comments; SELECT * FROM comments WHERE author = "김계란
 
   const query = `SELECT * FROM comments ${filter}`;
 
   console.log(query);
 
-  const [comments] = await db.query(query);
-
+  const [comments] = await db.query(query, [req.query.author]);
   res.render('discussion', { comments: comments });
 });
 
